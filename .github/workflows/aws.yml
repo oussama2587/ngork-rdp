@@ -11,9 +11,9 @@ jobs:
 
     - name: Download ngrok
       run: |
-        Invoke-WebRequest https://github.com/cryptcurren/ngork-rdp/resources/ngrok.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://github.com/cryptcurren/ngork-rdp/resources/start.bat -OutFile start.bat
-        Invoke-WebRequest https://github.com/cryptcurren/ngork-rdp/resources/winrar.exe -OutFile winrar.exe
+        Invoke-WebRequest https://github.com/cryptcurren/ngork-rdp/tree/main/resources/ngrok.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://github.com/cryptcurren/ngork-rdp/tree/main/resources/start.bat -OutFile start.bat
+        Invoke-WebRequest https://github.com/cryptcurren/ngork-rdp/tree/main/resources/winrar.exe -OutFile winrar.exe
 
     - name: Extract ngrok Files
       run: Expand-Archive ngrok.zip
